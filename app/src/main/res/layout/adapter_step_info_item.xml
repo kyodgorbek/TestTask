@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bcg_dark_blue_rounded_20"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivManeuverImage"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        app:srcCompat="@drawable/ic_maneuver_turn_45_left"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvActionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/ivManeuverImage"
+        tools:text="dsadasda"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvActionTitle"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/ivManeuverImage"
+        tools:text="dsadasda"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDistance"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/ivManeuverImage"
+        tools:text="dsadasda"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

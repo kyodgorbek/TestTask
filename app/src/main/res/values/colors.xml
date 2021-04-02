@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#B4B4B4</color>
+    <color name="colorAccent">#44A589</color>
+
+    <color name="colorAccent_40">#6644A589</color>
+
+    <color name="editErrorColor">#80FF0000</color>
+
+    <color name="window_background_gray">#333943</color>
+
+    <color name="card_background_color">#3A414D</color>
+    <color name="tint_disabled_gray">#5F7772</color>
+
+    <color name="shadow_gray">#3C424E</color>
+    <color name="dark_blue">#2C323D</color>
+    <color name="card_background_gray_58">#943B424E</color>
+
+    <color name="image_shadow_gray">#212429</color>
+
+    <color name="badge_red">#D9044C</color>
+
+    <color name="silver">#CBCBCB</color>
+    <color name="alto">#D9D9D9</color>
+    <color name="gray">#949494</color>
+    <color name="tint_gray">#7F889B</color>
+    <color name="bright_gray">#383F4B</color>
+    <color name="raven">#778191</color>
+
+    <color name="black_10">#80000000</color>
+    <color name="white_66">#A8FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+
+    <color name="edit_text_hint_color">#CCCCCC</color>
+    <color name="support_edit_text_hint_color">#B8B8B8</color>
+    <color name="asphalt_gray">#49485B</color>
+    <color name="white_10">#1AFFFFFF</color>
+    <color name="international_orange">#FF4F00</color>
+    <color name="orange">#FF5722</color>
+
+    <color name="silver_chalice">#A7A7A7</color>
+    <color name="madison">#112C63</color>
+    <color name="royal_blue">#3D73DF</color>
+    <color name="titan_white">#FAF9FF</color>
+    <color name="black_alpha_48">#7A000000</color>
+    <color name="stratos_alpha_0">#00000029</color>
+    <color name="royal_blue_alpha_15">#263D73DF</color>
+    <color name="manatee">#8E9094</color>
+    <color name="bavarian_blue">#173778</color>
+    <color name="flash_of_orange">#FFAA00</color>
+    <color name="asphalt_blue">#474C54</color>
+    <color name="pickled_radish">#F11945</color>
+    <color name="range_land">#69C254</color>
+    <color name="popstar">#C25463</color>
+
+    <color name="page_background_color">#FFFFFF</color>
+    <color name="hint_color">#7C888F</color>
+    <color name="divider_color">#F1F1F1</color>
+
+    <color name="shadow_color">#26ACACAC</color>
+
+    <color name="periwinkle_gray">#D1D8E4</color>
+    <color name="trout">#4A505B</color>
+</resources>

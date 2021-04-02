@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">TestTask</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiaGlrZW1lbGlreWFuIiwiYSI6ImNqd2dpM2d1cjF0cHE0OG1nZ3VsamJ2OWUifQ.yb4fgjPI9EqC2Wsk1Yqedw</string>
+    <string name="retry">Start navigation</string>
+    <string name="re_center_route">Re-center route</string>
+    <string name="view_steps">View steps</string>
+</resources>

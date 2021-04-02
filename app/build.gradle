@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.testtask"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "0.0.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation project(":domain")
+    implementation project(":data")
+    implementation project(":root")
+
+    implementation thirdPartyLibraries.kotlin
+    implementation thirdPartyLibraries.coroutines_android
+    implementation thirdPartyLibraries.coroutines_core
+
+    implementation thirdPartyLibraries.appcompat
+    implementation thirdPartyLibraries.core_ktx
+
+    implementation thirdPartyLibraries.fragment_ktx
+    implementation thirdPartyLibraries.constraintlayout
+
+    implementation thirdPartyLibraries.multidex
+
+    implementation thirdPartyLibraries.lifecycleCommon
+    implementation thirdPartyLibraries.lifecycleViewModel
+    implementation thirdPartyLibraries.lifecycleData
+
+    implementation thirdPartyLibraries.navigation
+    implementation thirdPartyLibraries.navigation_ui
+
+    implementation thirdPartyLibraries.retrofit
+    implementation thirdPartyLibraries.retrofit_gson_converter
+    implementation thirdPartyLibraries.retrofit_scallars_converter
+
+    implementation thirdPartyLibraries.pagination_library
+
+    implementation thirdPartyLibraries.dagger
+    kapt kaptDeps.dagger_compiler
+
+    implementation thirdPartyLibraries.material
+
+    implementation thirdPartyLibraries.map_view
+    implementation thirdPartyLibraries.location
+
+    implementation thirdPartyLibraries.legacy_support
+
+    implementation ('com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.1'){
+        exclude group: 'group_name', module: 'module_name'
+    }
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.42.6'
+    testImplementation testDependencies.junit
+    androidTestImplementation androidTestsDependencies.test_runner
+    androidTestImplementation androidTestsDependencies.espresso_core
+    androidTestImplementation androidTestsDependencies.uiAuthomator
+    androidTestImplementation androidTestsDependencies.hamcrest
+
+}
